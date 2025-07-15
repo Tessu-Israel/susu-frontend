@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Susu App – Green UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#22c55e", // green-500
+            "primary-dark": "#15803d", // green-700
+            "primary-light": "#bbf7d0", // green-100
+          },
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary-light text-gray-800 font-sans min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-primary text-white p-4 shadow-md">
+    <h1 class="text-2xl font-bold">Susu App</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-white rounded-xl p-5 shadow border-l-4 border-primary">
+      <h2 class="text-lg font-semibold text-primary-dark">Clients</h2>
+      <p class="text-3xl font-bold mt-2">128</p>
+    </div>
+    <div class="bg-white rounded-xl p-5 shadow border-l-4 border-primary">
+      <h2 class="text-lg font-semibold text-primary-dark">Savings</h2>
+      <p class="text-3xl font-bold mt-2">GH₵ 12,480</p>
+    </div>
+    <div class="bg-white rounded-xl p-5 shadow border-l-4 border-primary">
+      <h2 class="text-lg font-semibold text-primary-dark">Collectors</h2>
+      <p class="text-3xl font-bold mt-2">5</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-light text-center text-sm py-2 text-primary-dark">
+    &copy; 2025 Susu UI • Designed by Israel
+  </footer>
+
+</body>
+</html>
