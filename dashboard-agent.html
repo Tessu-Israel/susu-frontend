@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkabom – Agent Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#22c55e",
+            "primary-dark": "#15803d",
+            "primary-light": "#bbf7d0",
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary-light min-h-screen font-sans text-gray-800">
+
+  <!-- Top Bar -->
+  <header class="bg-primary text-white py-4 px-6 shadow-md flex justify-between items-center">
+    <h1 class="text-lg font-bold">Agent Panel</h1>
+    <button class="bg-white text-primary px-3 py-1 rounded-full text-sm shadow hover:bg-gray-100">Sync</button>
+  </header>
+
+  <!-- Main -->
+  <main class="p-4 space-y-6">
+
+    <!-- Welcome -->
+    <section class="bg-white rounded-xl p-5 shadow text-center">
+      <h2 class="text-xl font-semibold text-primary-dark">Hello, Kofi</h2>
+      <p class="text-sm text-gray-600">Here are your clients for today</p>
+    </section>
+
+    <!-- Client List -->
+    <section class="bg-white rounded-xl p-4 shadow space-y-3">
+      <h3 class="text-md font-semibold text-primary-dark mb-2">Today's Clients</h3>
+
+      <div class="flex justify-between items-center border-b pb-2">
+        <span class="font-medium">Akua Mensah</span>
+        <span class="text-xs text-gray-500">GH₵ 10.00</span>
+      </div>
+
+      <div class="flex justify-between items-center border-b pb-2">
+        <span class="font-medium">Yaw Kofi</span>
+        <span class="text-xs text-gray-500">GH₵ 5.00</span>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <span class="font-medium">Abena Adjei</span>
+        <span class="text-xs text-gray-500">GH₵ 8.00</span>
+      </div>
+    </section>
+
+    <!-- New Collection Button -->
+    <section class="text-center">
+      <a href="collections.html" class="inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primary-dark font-medium transition">
+        + New Collection
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-4 text-primary-dark">
+    &copy; 2025 Nkabom • Agent Dashboard
+  </footer>
+
+</body>
+</html>
