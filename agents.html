@@ -34,9 +34,10 @@
         <section class="bg-white rounded-xl p-4 shadow overflow-x-auto">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-semibold text-primary-dark">All Susu Collectors</h2>
-                <button id="addAgentBtn" class="bg-primary text-white px-4 py-2 rounded-xl text-sm hover:bg-primary-dark">
-  + Add Agent
-</button>
+                <button id="addAgentBtn"
+                    class="bg-primary text-white px-4 py-2 rounded-xl text-sm hover:bg-primary-dark">
+                    + Add Agent
+                </button>
             </div>
 
             <table class="w-full table-auto border-collapse text-sm">
@@ -134,17 +135,22 @@
         const modal = document.getElementById("addModal");
         const openBtn = document.getElementById("addAgentBtn");
 
-        openBtn?.addEventListener("click", () => modal.classList.remove("hidden"));
+        if (modal && openBtn) {
+            openBtn.addEventListener("click", () => modal.classList.remove("hidden"));
+        }
+
         function closeModal() {
             modal.classList.add("hidden");
         }
-    </script>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="fixed top-4 right-4 z-50 hidden px-6 py-3 rounded-xl shadow-lg text-white font-semibold">
-    </div>
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeModal();
+        });
 
-    <script>
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) closeModal();
+        });
+
         function showToast(message, type = "success") {
             const toast = document.getElementById("toast");
             toast.className =
@@ -157,13 +163,11 @@
 
             toast.textContent = message;
 
-            // Hide after 4 seconds
             setTimeout(() => {
                 toast.classList.add("hidden");
             }, 4000);
         }
     </script>
-
 
 </body>
 
