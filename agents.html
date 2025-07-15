@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkabom – Agents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#22c55e",
+            "primary-dark": "#15803d",
+            "primary-light": "#bbf7d0",
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary-light min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-primary text-white py-4 px-6 shadow-md flex justify-between items-center">
+    <h1 class="text-lg font-bold">Agents</h1>
+    <a href="dashboard-admin.html" class="text-sm hover:underline">← Dashboard</a>
+  </header>
+
+  <!-- Main -->
+  <main class="p-4">
+    <section class="bg-white rounded-xl p-4 shadow overflow-x-auto">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-primary-dark">All Susu Collectors</h2>
+        <button class="bg-primary text-white px-4 py-2 rounded-xl text-sm hover:bg-primary-dark">+ Add Agent</button>
+      </div>
+
+      <table class="w-full table-auto border-collapse text-sm">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th class="px-4 py-2 text-left">Name</th>
+            <th class="px-4 py-2 text-left">Phone</th>
+            <th class="px-4 py-2 text-left">Status</th>
+            <th class="px-4 py-2 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-4 py-2 font-medium">Kofi Adjei</td>
+            <td class="px-4 py-2">024 123 4567</td>
+            <td class="px-4 py-2">
+              <span class="text-green-600 font-semibold">Active</span>
+            </td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button class="bg-primary text-white px-3 py-1 rounded text-xs hover:bg-primary-dark">View</button>
+              <button class="bg-white border border-red-500 text-red-500 px-3 py-1 rounded text-xs hover:bg-red-100">Disable</button>
+            </td>
+          </tr>
+
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-4 py-2 font-medium">Ama Badu</td>
+            <td class="px-4 py-2">020 987 6543</td>
+            <td class="px-4 py-2">
+              <span class="text-red-600 font-semibold">Disabled</span>
+            </td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button class="bg-primary text-white px-3 py-1 rounded text-xs hover:bg-primary-dark">View</button>
+              <button class="bg-white border border-green-500 text-green-500 px-3 py-1 rounded text-xs hover:bg-green-100">Enable</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-4 text-primary-dark">
+    &copy; 2025 Nkabom • Agent Management
+  </footer>
+
+</body>
+</html>
