@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkabom – Clients</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#22c55e",
+            "primary-dark": "#15803d",
+            "primary-light": "#bbf7d0",
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary-light min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-primary text-white py-4 px-6 shadow-md flex justify-between items-center">
+    <h1 class="text-lg font-bold">Clients</h1>
+    <a href="dashboard-admin.html" class="text-sm hover:underline">← Dashboard</a>
+  </header>
+
+  <!-- Main -->
+  <main class="p-4">
+    <section class="bg-white rounded-xl p-4 shadow overflow-x-auto">
+      <h2 class="text-xl font-semibold text-primary-dark mb-4">Client List</h2>
+
+      <table class="w-full table-auto border-collapse">
+        <thead class="bg-primary text-white text-left">
+          <tr>
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Phone</th>
+            <th class="px-4 py-2">Balance (GH₵)</th>
+            <th class="px-4 py-2 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-4 py-2 font-medium">Akua Mensah</td>
+            <td class="px-4 py-2">050 123 4567</td>
+            <td class="px-4 py-2">120.00</td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button class="bg-primary text-white px-3 py-1 rounded hover:bg-primary-dark text-xs">View</button>
+              <button class="bg-white border border-primary text-primary px-3 py-1 rounded hover:bg-primary-light text-xs">Collect</button>
+            </td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-4 py-2 font-medium">Yaw Kofi</td>
+            <td class="px-4 py-2">024 987 6543</td>
+            <td class="px-4 py-2">75.00</td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button class="bg-primary text-white px-3 py-1 rounded hover:bg-primary-dark text-xs">View</button>
+              <button class="bg-white border border-primary text-primary px-3 py-1 rounded hover:bg-primary-light text-xs">Collect</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-4 py-2 font-medium">Ama Nkrumah</td>
+            <td class="px-4 py-2">020 555 1122</td>
+            <td class="px-4 py-2">0.00</td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button class="bg-primary text-white px-3 py-1 rounded hover:bg-primary-dark text-xs">View</button>
+              <button class="bg-white border border-primary text-primary px-3 py-1 rounded hover:bg-primary-light text-xs">Collect</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-4 text-primary-dark">
+    &copy; 2025 Nkabom • Clients View
+  </footer>
+
+</body>
+</html>
