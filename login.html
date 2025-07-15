@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nkabom – Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22c55e",        // green-500
+              "primary-dark": "#15803d", // green-700
+              "primary-light": "#bbf7d0" // green-100
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-primary-light flex items-center justify-center min-h-screen text-gray-800 font-sans">
+
+    <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+      
+      <!-- Branding -->
+      <div class="text-center mb-6">
+        <h1 class="text-3xl font-extrabold text-primary-dark">Nkabom</h1>
+        <p class="text-sm text-gray-600 mt-1">United Savings. Stronger Together.</p>
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium mb-1 text-primary-dark">Email</label>
+          <input type="email" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1 text-primary-dark">Password</label>
+          <input type="password" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" placeholder="••••••••" required>
+        </div>
+
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="accent-primary">
+            Remember me
+          </label>
+          <a href="#" class="text-primary hover:underline">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white py-2 rounded-xl font-semibold transition">
+          Sign In
+        </button>
+      </form>
+
+      <!-- Footer -->
+      <p class="text-xs text-gray-500 mt-6 text-center">
+        © 2025 Nkabom App. All rights reserved.
+      </p>
+    </div>
+
+  </body>
+</html>
