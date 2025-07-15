@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkabom – Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#22c55e",
+            "primary-dark": "#15803d",
+            "primary-light": "#bbf7d0",
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary-light min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-primary text-white py-4 px-6 shadow-md">
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold">Nkabom Admin</h1>
+      <span class="text-sm">Admin • Israel</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6 space-y-6">
+
+    <!-- Welcome -->
+    <section class="bg-white rounded-xl p-6 shadow text-center">
+      <h2 class="text-2xl font-semibold text-primary-dark">Welcome back, Admin!</h2>
+      <p class="text-gray-600 mt-1">Here’s a quick overview of your company’s performance today.</p>
+    </section>
+
+    <!-- Stats -->
+    <section class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-white p-5 rounded-xl shadow border-l-4 border-primary">
+        <h3 class="text-sm text-gray-600">Total Clients</h3>
+        <p class="text-3xl font-bold text-primary-dark mt-1">132</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow border-l-4 border-primary">
+        <h3 class="text-sm text-gray-600">Total Agents</h3>
+        <p class="text-3xl font-bold text-primary-dark mt-1">7</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow border-l-4 border-primary">
+        <h3 class="text-sm text-gray-600">Total Savings</h3>
+        <p class="text-3xl font-bold text-primary-dark mt-1">GH₵ 24,500</p>
+      </div>
+    </section>
+
+    <!-- Placeholder Navigation -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <a href="clients.html" class="bg-white hover:bg-gray-50 p-5 rounded-xl shadow flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-semibold text-primary-dark">Manage Clients</h4>
+          <p class="text-sm text-gray-500">View and update client data</p>
+        </div>
+        <span class="text-primary">&rarr;</span>
+      </a>
+
+      <a href="agents.html" class="bg-white hover:bg-gray-50 p-5 rounded-xl shadow flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-semibold text-primary-dark">Manage Agents</h4>
+          <p class="text-sm text-gray-500">Add, disable, or track agents</p>
+        </div>
+        <span class="text-primary">&rarr;</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-4 text-primary-dark">
+    &copy; 2025 Nkabom Admin • United Savings
+  </footer>
+
+</body>
+</html>
