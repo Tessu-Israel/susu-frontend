@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nkabom – Save Together</title>
+  <link rel="stylesheet" href="./src/index.css">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -18,6 +20,8 @@
       }
     };
   </script>
+  
+
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
@@ -30,27 +34,121 @@
   <!-- Hero Section -->
   <section class="bg-primary-light py-16 px-6 text-center">
     <h2 class="text-4xl font-bold text-primary-dark mb-4">Community Savings. The Smart Way.</h2>
-    <p class="max-w-xl mx-auto text-gray-700 text-lg">Nkabom helps businesses and field agents manage susu contributions securely and effortlessly.</p>
+    <p class="max-w-xl mx-auto text-gray-700 text-lg">Nkabom is your all-in-one solution for managing Susu collections, agents, clients, and loans — securely and efficiently.</p>
     <div class="mt-8">
       <a href="login.html" class="bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition">Get Started</a>
     </div>
   </section>
 
-  <!-- How it Works -->
-  <section class="py-16 px-6 max-w-5xl mx-auto text-center space-y-12">
-    <h3 class="text-2xl font-bold text-primary-dark">How Nkabom Works</h3>
-    <div class="grid md:grid-cols-3 gap-8 text-left">
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h4 class="text-lg font-semibold text-primary-dark mb-2">1. Register Your Business</h4>
-        <p class="text-sm text-gray-600">Admins sign up and onboard agents to begin collecting savings from clients.</p>
+<!-- Key Features Section -->
+<section class="bg-white py-16 px-4 sm:px-4 lg:px-8" id="features">
+  <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-dark mb-12">Key Features</h2>
+
+  <!-- Responsive, centered card container -->
+  <div class="flex flex-wrap justify-center gap-8 px-2 sm:px-4 py-8 bg-gray-100 w-full max-w-7xl mx-auto">
+    
+    <!-- CARD 1 -->
+    <div class="group perspective w-[280px] sm:w-[300px] md:w-[340px] lg:w-[380px] h-64">
+      <div class="relative w-full h-full duration-700 transform-style preserve-3d group-hover:rotate-y-180">
+        <!-- Front -->
+        <div class="absolute w-full h-full bg-white p-6 rounded-2xl shadow-xl backface-hidden flex flex-col items-center justify-center text-center">
+          <svg class="w-10 h-10 text-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M3 10h18M3 6h18M3 14h18M3 18h18" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Easy Record Keeping</h3>
+          <p class="text-sm text-gray-600">Track deposits, withdrawals, and loans effortlessly.</p>
+        </div>
+        <!-- Back -->
+        <div class="absolute w-full h-full bg-primary text-white p-6 rounded-2xl shadow-xl rotate-y-180 backface-hidden flex flex-col items-center justify-center text-center">
+          <h3 class="text-xl font-semibold mb-2">Accurate Logs</h3>
+          <p class="text-sm">Stay confident with every member’s transaction history saved securely.</p>
+        </div>
       </div>
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h4 class="text-lg font-semibold text-primary-dark mb-2">2. Add Clients & Collect</h4>
-        <p class="text-sm text-gray-600">Agents log daily collections via mobile dashboard — fast, paperless, and secure.</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="group perspective w-[280px] sm:w-[300px] md:w-[340px] lg:w-[380px] h-64">
+      <div class="relative w-full h-full duration-700 transform-style preserve-3d group-hover:rotate-y-180">
+        <div class="absolute w-full h-full bg-white p-6 rounded-2xl shadow-xl backface-hidden flex flex-col items-center justify-center text-center">
+          <svg class="w-10 h-10 text-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M12 20l9-5-9-5-9 5 9 5z" /><path d="M12 12V4" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Real-Time Updates</h3>
+          <p class="text-sm text-gray-600">Track financial flows with live dashboards.</p>
+        </div>
+        <div class="absolute w-full h-full bg-primary text-white p-6 rounded-2xl shadow-xl rotate-y-180 backface-hidden flex flex-col items-center justify-center text-center">
+          <h3 class="text-xl font-semibold mb-2">Always Informed</h3>
+          <p class="text-sm">See who’s saving, borrowing, or repaying in real time.</p>
+        </div>
       </div>
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h4 class="text-lg font-semibold text-primary-dark mb-2">3. Track Performance</h4>
-        <p class="text-sm text-gray-600">Admins monitor balances, clients, and savings totals in real-time.</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="group perspective w-[280px] sm:w-[300px] md:w-[340px] lg:w-[380px] h-64">
+      <div class="relative w-full h-full duration-700 transform-style preserve-3d group-hover:rotate-y-180">
+        <div class="absolute w-full h-full bg-white p-6 rounded-2xl shadow-xl backface-hidden flex flex-col items-center justify-center text-center">
+          <svg class="w-10 h-10 text-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M12 20h9" /><path d="M3 4h18" /><path d="M5 8h14v12H5z" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Secure Admin Portal</h3>
+          <p class="text-sm text-gray-600">Admins manage clients, collections & agents seamlessly.</p>
+        </div>
+        <div class="absolute w-full h-full bg-primary text-white p-6 rounded-2xl shadow-xl rotate-y-180 backface-hidden flex flex-col items-center justify-center text-center">
+          <h3 class="text-xl font-semibold mb-2">Total Control</h3>
+          <p class="text-sm">Built-in roles keep your operations smooth and safe.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="group perspective w-[280px] sm:w-[300px] md:w-[340px] lg:w-[380px] h-64">
+      <div class="relative w-full h-full duration-700 transform-style preserve-3d group-hover:rotate-y-180">
+        <div class="absolute w-full h-full bg-white p-6 rounded-2xl shadow-xl backface-hidden flex flex-col items-center justify-center text-center">
+          <svg class="w-10 h-10 text-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8V4m0 0l-2 2m2-2l2 2M12 16v4m0 0l-2-2m2 2l2-2M5 12h14" />
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Transaction Management</h3>
+          <p class="text-sm text-gray-600">Record deposits, withdrawals, and loans easily.</p>
+        </div>
+        <div class="absolute w-full h-full bg-primary text-white p-6 rounded-2xl shadow-xl rotate-y-180 backface-hidden flex flex-col items-center justify-center text-center">
+          <h3 class="text-xl font-semibold mb-2">Friendly Usage</h3>
+          <p class="text-sm">Monitor all financial activities in real-time with total transparency and ease.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Features Section -->
+  <section class="py-16 px-6 max-w-6xl mx-auto text-center space-y-16">
+    <h3 class="text-2xl font-bold text-primary-dark">Everything You Need to Manage Your Susu Business</h3>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Transaction Management</h4>
+        <p class="text-sm text-gray-600">Track deposits, withdrawals, and loan disbursements in real-time.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Customer Management</h4>
+        <p class="text-sm text-gray-600">Register clients and track their balances and transaction history with ease.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Loan Applications</h4>
+        <p class="text-sm text-gray-600">Submit and manage client loan requests, disbursements, and statuses.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Agent Access Control</h4>
+        <p class="text-sm text-gray-600">Agents can only log in after being registered by the system administrator.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Admin Dashboard</h4>
+        <p class="text-sm text-gray-600">Admins oversee the platform, manage agents, and monitor activity securely.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+        <h4 class="text-lg font-semibold text-primary-dark mb-2">Secure Platform</h4>
+        <p class="text-sm text-gray-600">Built for security and reliability, with encrypted login and role-based access.</p>
       </div>
     </div>
   </section>
@@ -64,6 +162,7 @@
   <!-- Footer -->
   <footer class="text-center text-sm text-primary-dark py-6 bg-white">
     &copy; 2025 Nkabom • Built with 💚 in Ghana
+    <p class="mt-2">New admin? Contact your system administrator to request access.</p>
   </footer>
 
 </body>
