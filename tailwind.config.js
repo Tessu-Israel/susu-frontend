@@ -1,3 +1,4 @@
+// tailwind.config.js
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -7,11 +8,9 @@ module.exports = {
         '9xl': '1600px',
       },
       transformOrigin: {
-        'center': 'center center',
+        center: 'center', // ✅ No need to wrap with quotes unless special characters
       },
     },
   },
   plugins: [],
 };
-
-
